@@ -1,14 +1,17 @@
-Predicting football player's market value using data from the video game FIFA 21
+Predicting football player's market value using data from the video game FIFA 21  
 
-1. Objective & Hypothesis
+![](https://image.api.playstation.com/vulcan/img/rnd/202012/0119/0wqGMy0MGDbTJlhAlYH95cb0.png)
 
-Objective: 
+
+# **1. Objective & Hypothesis**
+
+## **Objective:**  
 
 - Use a linear regression model to predict the market value of football players using statistics from FIFA 21
 - Analyse the relationship between the different variables in the dataset
 - Make a lineup of 11 players based on the players with the highest overall rating for their respective position and a lineup based on players with the highest potential per position
 
-Hypothesis:
+## **Hypothesis:**  
 
 Based on my prior knowledge I assumed that the value of a player should be predictable based on the following variables from FIFA:
 
@@ -22,7 +25,7 @@ Based on my prior knowledge I assumed that the value of a player should be predi
 - time left on contract
 
 
-2. Explanation of how data was processed
+## **2. Explanation of how data was processed**  
 
 - The dataset is all of the available data from the video game FIFA 2021 which was scraped from this website: https://sofifa.com
 - The data includes basic info about the players from FIFA including name, age, club, nationality, overall rating as well as attacking & defending points, value, wage & release clause (amongst many others).
@@ -32,20 +35,20 @@ Based on my prior knowledge I assumed that the value of a player should be predi
 - Finally I removed what I considered to be unnecessary categorical columns (such as name, club etc which have no influence on value), then used get_dummies to encode the one remaining categorical (best position) and split the data in test/train sets and applied the linear regession model from sklearn.
 
 
-3. Summary of results
+## **3. Summary of results**  
 
 - The linear regression model returned an R2 score of 0.947.
 - This indicates that the variables I chose are potentially good indicators of player value.
 - The model can thus be used to predict to predict future players market value.
 
-4. Sources:
+## **4. Sources:**  
 
 - https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset
 - https://www.kaggle.com/ketanp79/fifa-19-predicting-players-market-value#Discover-and-visualize-the-data-to-gain-insights
 - https://sofifa.com
 
 
-5. List of libraries used:
+## **5. List of libraries used:**  
 
 - pandas
 - numpy
